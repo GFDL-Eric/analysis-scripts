@@ -252,7 +252,7 @@ class RadiationVsCeresAnalysisScript(AnalysisScript):
         if config:
             query_params.update(config)
 
-        pdb.set_trace()
+        #pdb.set_trace()
         search_results = model_catalog.search(**query_params)
         print("model search results returned")
         datasets = search_results.to_dataset_dict(progressbar=False)
