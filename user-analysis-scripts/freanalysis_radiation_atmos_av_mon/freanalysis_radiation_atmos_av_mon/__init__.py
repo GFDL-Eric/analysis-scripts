@@ -306,7 +306,7 @@ class RadiationVsCeresAnalysisScript(AnalysisScript):
 
         figure = chuck_radiation(model_map, obs_map, f"{title}")
         print("chuck radiation")
-        breakpoint()
+        #breakpoint()
         output = Path(png_dir) / f"{title.lower().replace(' ', '-')}.png"
         print("path determined")
         figure.save(output)
